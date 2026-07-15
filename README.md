@@ -1,5 +1,7 @@
 # Overview
 
+[![On-push checks](https://github.com/christianjbrown/php-user-friendly-exception-lib/actions/workflows/push-checks.yml/badge.svg)](https://github.com/christianjbrown/php-user-friendly-exception-lib/actions/workflows/push-checks.yml)
+
 This is an **extremely simple** PHP library for a reusable `UserFriendlyException` class.
 
 Using `UserFriendlyException` indicates that the `$message` passed is safe to and clear enough to be bubbled up to the end user.
