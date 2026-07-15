@@ -1,4 +1,4 @@
-# Overview
+# User-Friendly Exception
 
 [![CI](https://github.com/christianjbrown/php-user-friendly-exception-lib/actions/workflows/ci.yml/badge.svg)](https://github.com/christianjbrown/php-user-friendly-exception-lib/actions/workflows/ci.yml)
 

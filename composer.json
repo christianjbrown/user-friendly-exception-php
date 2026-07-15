@@ -17,6 +17,16 @@
         "phpstan/phpstan": "^2.0",
         "phpunit/phpunit": "^12.0"
     },
+    "autoload": {
+        "psr-4": {
+            "ChristianBrown\\UserFriendlyException\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ChristianBrown\\UserFriendlyException\\Tests\\": "tests/"
+        }
+    },
     "scripts": {
         "test": [
             "clear && XDEBUG_MODE=coverage php -d memory_limit=-1 ./bin/phpunit && open ./.phpunit.cache/code-coverage-html/index.html"
@@ -39,16 +49,6 @@
     },
     "config": {
         "bin-dir": "bin"
-    },
-    "autoload": {
-        "psr-4": {
-            "ChristianBrown\\UserFriendlyException\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "ChristianBrown\\UserFriendlyException\\Tests\\": "tests/"
-        }
     },
     "repositories": [
         {
