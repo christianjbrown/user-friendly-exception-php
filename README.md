@@ -1,6 +1,6 @@
 # Overview
 
-[![On-push checks](https://github.com/christianjbrown/php-user-friendly-exception-lib/actions/workflows/push-checks.yml/badge.svg)](https://github.com/christianjbrown/php-user-friendly-exception-lib/actions/workflows/push-checks.yml)
+[![CI](https://github.com/christianjbrown/php-user-friendly-exception-lib/actions/workflows/ci.yml/badge.svg)](https://github.com/christianjbrown/php-user-friendly-exception-lib/actions/workflows/ci.yml)
 
 This is an **extremely simple** PHP library for a reusable `UserFriendlyException` class.
 
@@ -16,7 +16,7 @@ Using `UserFriendlyException` indicates that the `$message` passed is safe to an
 
 
 
-# :building_construction: Installation
+## :building_construction: Installation
 
 For your composer-enabled project:
 
@@ -25,7 +25,7 @@ composer require christianjbrown/php-user-friendly-exception-lib
 ```
 
 
-# :computer: Usage
+## :computer: Usage
 
 Throwing the exception after catching a non-user-friendly exception.
 
@@ -62,7 +62,7 @@ return $response;
 ```
 
 
-# :page_facing_up: License
+## :page_facing_up: License
 
 Released under the [MIT License](LICENSE).
 
