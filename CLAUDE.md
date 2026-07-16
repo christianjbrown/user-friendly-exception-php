@@ -5,7 +5,7 @@ tiny, uniform, and highly opinionated, so new code should be indistinguishable f
 
 ## What this is
 
-An **extremely simple** PHP 8.3+ library providing a single reusable exception,
+An **extremely simple** PHP 8.5+ library providing a single reusable exception,
 `UserFriendlyException`. Throwing it signals that the exception `$message` is safe and clear enough
 to be shown directly to an end user (e.g. surfaced in an HTTP response), as opposed to a technical
 exception whose message must not leak. There is no behavior beyond that contract: the class is an
@@ -34,7 +34,7 @@ SSH/`COMPOSER_AUTH` access to the private repo.
 Always run `composer fix-style` first (php-cs-fixer auto-fixes what it can), then `composer
 check-style` to surface remaining violations that must be fixed by hand, then `composer stan`, then
 `composer test` before finishing. CI (`.github/workflows/ci.yml`) runs the same gates — style →
-PHPStan → PHPUnit-with-coverage — on push/PR to `main`, on PHP 8.3.
+PHPStan → PHPUnit-with-coverage — on push/PR to `main`, on PHP 8.5.
 
 ## Architecture
 
