@@ -13,12 +13,12 @@ use RuntimeException;
 #[CoversClass(UserFriendlyException::class)]
 final class UserFriendlyExceptionTest extends TestCase
 {
-    public function testIsThrowableUserFriendlyRuntimeException(): void
+    public function testDefaultsWhenOnlyMessageGiven(): void
     {
         $exception = new UserFriendlyException('test-message');
 
-        self::assertInstanceOf(UserFriendlyExceptionInterface::class, $exception);
-        self::assertInstanceOf(RuntimeException::class, $exception);
+        self::assertSame(0, $exception->getCode());
+        self::assertNull($exception->getPrevious());
     }
 
     public function testExposesMessageCodeAndPrevious(): void
@@ -31,11 +31,11 @@ final class UserFriendlyExceptionTest extends TestCase
         self::assertSame($previous, $exception->getPrevious());
     }
 
-    public function testDefaultsWhenOnlyMessageGiven(): void
+    public function testIsThrowableUserFriendlyRuntimeException(): void
     {
         $exception = new UserFriendlyException('test-message');
 
-        self::assertSame(0, $exception->getCode());
-        self::assertNull($exception->getPrevious());
+        self::assertInstanceOf(UserFriendlyExceptionInterface::class, $exception);
+        self::assertInstanceOf(RuntimeException::class, $exception);
     }
 }
