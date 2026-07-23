@@ -51,6 +51,9 @@ Everything lives under `ChristianBrown\UserFriendlyException\` (`src/`), mirrore
 
 - `declare(strict_types=1);` on every file, immediately after `<?php`.
 - **Every concrete class is `final` and implements a matching `...Interface`** in the same namespace.
+- **A method that does not use `$this` must be `static`** (called via `self::`) — a stateless helper is
+  static. Enforced for private methods by the shared `RequireStaticPrivateMethodRule` PHPStan rule (via
+  `php-code-quality-scripts`' `config/phpstan.neon`); interface/override methods stay instance.
 - No file-level doc/license headers — files go straight from `<?php` to `declare` to `namespace`.
 - Keep it minimal: the exception carries no custom constructor, properties, or constants. If new
   behavior is ever genuinely needed, prefer the `RuntimeException` inheritance already in place.
