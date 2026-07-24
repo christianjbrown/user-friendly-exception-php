@@ -18,7 +18,7 @@ library is standalone — it is not a dependency of the sibling API-client libra
 
 Binaries install into `bin/` (Composer `bin-dir`), not `vendor/bin/`. Both `bin/` and `vendor/` are
 gitignored and Composer-installed, so run `composer install` first. Style tooling comes from the
-`christianjbrown/php-code-quality-scripts` dev dependency (php-cs-fixer + PHP_CodeSniffer, **Symfony2
+`christianjbrown/code-quality-scripts` dev dependency (php-cs-fixer + PHP_CodeSniffer, **Symfony2
 coding standard**); the `bin/php-cs*` scripts are thin wrappers over it. Installing it needs
 SSH/`COMPOSER_AUTH` access to the private repo.
 
@@ -53,7 +53,7 @@ Everything lives under `ChristianBrown\UserFriendlyException\` (`src/`), mirrore
 - **Every concrete class is `final` and implements a matching `...Interface`** in the same namespace.
 - **A method that does not use `$this` must be `static`** (called via `self::`) — a stateless helper is
   static. Enforced for private methods by the shared `RequireStaticPrivateMethodRule` PHPStan rule (via
-  `php-code-quality-scripts`' `config/phpstan.neon`); interface/override methods stay instance.
+  `code-quality-scripts`' `config/phpstan.neon`); interface/override methods stay instance.
 - No file-level doc/license headers — files go straight from `<?php` to `declare` to `namespace`.
 - Keep it minimal: the exception carries no custom constructor, properties, or constants. If new
   behavior is ever genuinely needed, prefer the `RuntimeException` inheritance already in place.

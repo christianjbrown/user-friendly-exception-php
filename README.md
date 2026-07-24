@@ -1,6 +1,6 @@
 # User-Friendly Exception
 
-[![CI](https://github.com/christianjbrown/php-user-friendly-exception-lib/actions/workflows/ci.yml/badge.svg)](https://github.com/christianjbrown/php-user-friendly-exception-lib/actions/workflows/ci.yml)
+[![CI](https://github.com/christianjbrown/user-friendly-exception-php/actions/workflows/ci.yml/badge.svg)](https://github.com/christianjbrown/user-friendly-exception-php/actions/workflows/ci.yml)
 
 This is an **extremely simple** PHP library for a reusable `UserFriendlyException` class.
 
@@ -21,7 +21,7 @@ Using `UserFriendlyException` indicates that the `$message` passed is safe to an
 For your composer-enabled project:
 
 ```bash
-composer require christianjbrown/php-user-friendly-exception-lib
+composer require christianjbrown/user-friendly-exception
 ```
 
 
