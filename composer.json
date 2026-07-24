@@ -1,5 +1,5 @@
 {
-    "name": "christianjbrown/php-user-friendly-exception-lib",
+    "name": "christianjbrown/user-friendly-exception",
     "description": "A tiny PHP library providing a UserFriendlyException whose message is safe to display directly to end users.",
     "type": "library",
     "license": "MIT",
@@ -13,7 +13,7 @@
         "php": "^8.5"
     },
     "require-dev": {
-        "christianjbrown/php-code-quality-scripts": "dev-main",
+        "christianjbrown/code-quality-scripts": "dev-main",
         "phpstan/phpstan": "^2.0",
         "phpunit/phpunit": "^13.0"
     },
@@ -56,7 +56,7 @@
     "repositories": [
         {
             "type": "github",
-            "url": "git@github.com:christianjbrown/php-code-quality-scripts.git"
+            "url": "git@github.com:christianjbrown/code-quality-scripts-php.git"
         }
     ]
 }
