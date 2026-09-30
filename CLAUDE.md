@@ -33,8 +33,8 @@ SSH/`COMPOSER_AUTH` access to the private repo.
 
 Always run `composer fix-style` first (php-cs-fixer auto-fixes what it can), then `composer
 check-style` to surface remaining violations that must be fixed by hand, then `composer stan`, then
-`composer test` before finishing. CI (`.github/workflows/ci.yml`) runs the same gates — style →
-PHPStan → PHPUnit-with-coverage — on push/PR to `main`, on PHP 8.5.
+`composer test` before finishing. CI (`.github/workflows/ci.yml`) runs the same gates (style,
+PHPStan, PHPUnit with a 100% coverage floor on every metric) on push/PR to `main`, on PHP 8.5.
 
 ## Architecture
 
