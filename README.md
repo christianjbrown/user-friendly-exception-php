@@ -1,6 +1,6 @@
 # User-Friendly Exception
 
-[![CI](https://github.com/christianjbrown/user-friendly-exception-php/actions/workflows/ci.yml/badge.svg)](https://github.com/christianjbrown/user-friendly-exception-php/actions/workflows/ci.yml) [![License](https://img.shields.io/github/license/christianjbrown/user-friendly-exception-php)](https://github.com/christianjbrown/user-friendly-exception-php/blob/main/LICENSE) [![PHP](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fchristianjbrown%2Fuser-friendly-exception-php%2Fmain%2Fcomposer.json&query=%24.require.php&label=php&color=777BB4)](https://github.com/christianjbrown/user-friendly-exception-php/blob/main/composer.json)
+[![CI](https://github.com/christianjbrown/user-friendly-exception-php/actions/workflows/ci.yml/badge.svg)](https://github.com/christianjbrown/user-friendly-exception-php/actions/workflows/ci.yml) [![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/christianjbrown/user-friendly-exception-php/actions/workflows/ci.yml) [![Packagist](https://img.shields.io/packagist/v/christianjbrown/user-friendly-exception)](https://packagist.org/packages/christianjbrown/user-friendly-exception) [![License](https://img.shields.io/packagist/l/christianjbrown/user-friendly-exception)](https://github.com/christianjbrown/user-friendly-exception-php/blob/main/LICENSE) [![PHP](https://img.shields.io/packagist/dependency-v/christianjbrown/user-friendly-exception/php)](https://packagist.org/packages/christianjbrown/user-friendly-exception)
 
 This is an **extremely simple** PHP library for a reusable `UserFriendlyException` class.
 
@@ -60,6 +60,12 @@ try {
 
 return $response;
 ```
+
+
+## :memo: Changelog
+
+Notable changes in each release are listed in [CHANGELOG.md](CHANGELOG.md).
+
 
 
 ## :page_facing_up: License
